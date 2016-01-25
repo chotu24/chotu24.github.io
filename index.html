@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link type="text/css" rel="stylesheet" href="css/chessTimer.css"/>
 	<title>chotu</title>
 </head>
 <body>
-
-<h1>hello Everyone</h1>
-<textarea cols="60"rows="10"></textarea>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
 <script src="https://togetherjs.com/togetherjs-min.js"></script>
-<button onclick="TogetherJS(this); return false;">Start TogetherJS</button>
+	<div id="mainContainer">	    
+	<input type="button" class="btn" id="player1" value="Player1" onclick="player1()"/>
+
+	<div class="separator">
+		<div id="player1logo">player1</div>
+	    <div id="timer1" class="timer">
+	        00:00
+	    </div>
+	    <div id="timer2" class="timer">
+	        00:00
+	    </div>
+
+	</div>
+	<input type="button" class="btn" id="player2" value="Player2" onclick="player2();"/>
+	</div>
+	<input type="button" class="stopTimer" value="Clear Timer">
+
+	<div id="gameCtrlBtn">
+		<input type="text" id="inputTimeoutValue" placeholder="enter Time to play"/>
+		<input type="button" class="stopTimer" value="Start Timer" onclick="startTimer()">	
+	</div>
+	<button onclick="TogetherJS(this); return false;">Start TogetherJS</button>
+	<script type="text/javascript" src="js/chessTimer.js"></script>
 </body>
 </html>

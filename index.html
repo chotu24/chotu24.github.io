@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link type="image/x-icon" rel="icon" href="http://learnjavafun.blogspot.com/favicon.ico"/> 
+	
+	<!-- going forward I should be able to get rid of chessTimer.css -->
+
+	<link type="text/css" rel="stylesheet" href="css/main.css"/>
 	<link type="text/css" rel="stylesheet" href="css/chessTimer.css"/>
 	<title>chotu</title>
 </head>
 <body>
 <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
 <script src="https://togetherjs.com/togetherjs-min.js"></script>
+	<header><h2>this Site is under Construction please hold on before trying</h2></header>
+	
+	<div id="gameCtrlBtn">
+		
+		<input type="text" id="inputTimeoutValue" placeholder="Enter Time to play"/>
+		
+		<input type="button" class="stopTimer" value="Start Timer" onclick="startTimer()">	
+	</div>
+	</br>
+	</br>
 	<div id="mainContainer">	    
 	<input type="button" class="btn" id="player1" value="Player1" onclick="player1()"/>
 
@@ -24,10 +39,7 @@
 	</div>
 	<input type="button" class="stopTimer" value="Clear Timer">
 
-	<div id="gameCtrlBtn">
-		<input type="text" id="inputTimeoutValue" placeholder="enter Time to play"/>
-		<input type="button" class="stopTimer" value="Start Timer" onclick="startTimer()">	
-	</div>
+	
 	<button onclick="TogetherJS(this); return false;">Start TogetherJS</button>
 	<script type="text/javascript" src="js/chessTimer.js"></script>
 </body>

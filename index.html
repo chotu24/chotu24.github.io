@@ -14,11 +14,11 @@
 <script src="https://togetherjs.com/togetherjs-min.js"></script>
 	<header><h2>this Site is under Construction please hold on before trying</h2></header>
 	
-	<div id="gameCtrlBtn">
+	<div class="relativePosition">
 		
 		<input type="text" id="inputTimeoutValue" placeholder="Enter Time to play"/>
 		
-		<input type="button" class="stopTimer" value="Start Timer" onclick="startTimer()">	
+		<input type="button" class="stopTimer absolutePosition" value="Start Timer" onclick="startTimer()">	
 	</div>
 	</br>
 	</br>
@@ -35,12 +35,15 @@
 	    </div>
 
 	</div>
+
+
 	<input type="button" class="btn" id="player2" value="Player2" onclick="player2();"/>
 	</div>
-	<input type="button" class="stopTimer" value="Clear Timer">
+	<div class="relativePosition">
+		<input type="button" class="stopTimer absolutePosition" value="Clear Timer">
+		<button onclick="TogetherJS(this); return false;">Start TogetherJS</button>
+	</div>
 
-	
-	<button onclick="TogetherJS(this); return false;">Start TogetherJS</button>
 	<script type="text/javascript" src="js/chessTimer.js"></script>
 </body>
 </html>

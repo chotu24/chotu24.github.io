@@ -12,18 +12,18 @@
     position: absolute;
     top: 0px;
     left:0px;
-    background-color: #ff3300;
+    background-color: #e8e8e8;
 }
 
 #player2{
     position: absolute;
     top:0px;
     left:300px;
-    background-color: #ff3300;
+    background-color: #e8e8e8;
 }
 #mainContainer{
     position: relative;
-    width: 400px;
+    width: 300px;
     height: 300px;
     background-color:#e8e8e8;
     border: 2px solid green;
@@ -52,17 +52,37 @@
     font-size:17px;
 }
 .stopTimer{
-    height: 25px;
-    background-color:yellow;
-    width: 85px;
+    background-color:#e8e8e8;
     padding:2px;
-    text-align:center;
-    left:270px;
 }
+.
 
 .absolutePosition{
     position: absolute;
 }
 .relativePosition{
     position: relative;
+}
+
+.border-radius-min{
+    border-radius: 6px;
 }   
+
+.padding-mid{
+    padding: 10px;
+}
+
+.verticalAlignMain{
+    display: table;
+}
+.verticalAlign{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.marginRight-min{
+    margin-right: 10px;
+}
+.marginTop-min{
+    margin-top: 10px;
+}

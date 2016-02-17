@@ -31,7 +31,7 @@ var player1TimerContainer = document.getElementById('timer1');
 
 function player1(){
 
-	if(player1Running){
+	if(player1Running && player1Seconds >= 0){
 		player2Running = false;
 
 		if(player1clicked){
@@ -45,6 +45,7 @@ function player1(){
 	    function updateTime(){
 	        	if(player1Seconds<0){
 	               stopTimer();
+	               alert('Player2 Lost');
 	            }else{
 	            	player1TimerContainer.innerHTML= player1Seconds--;
 	        	}
@@ -59,7 +60,8 @@ function player1(){
 
 function player2(){
 
-	if(player2Running){
+	//player2Seconds this additional condition added to avoid NaN , when user click on button without setting timer first
+	if(player2Running && player2Seconds){
 
 		player1Running=false;
 		
@@ -68,6 +70,7 @@ function player2(){
 			player2clicked=false;
 			player1();
 		}else{
+
 			player2TimerStarted = setInterval(updateTime,1000);
 			player2clicked = true;
 		}
@@ -77,6 +80,7 @@ function player2(){
 	    function updateTime(){
 	        	if(player2Seconds<0){
 	               stopTimer();
+	               alert('Player2 Lost');
 	            }else{
 	            	player2TimerContainer.innerHTML= player2Seconds--;
 	            }

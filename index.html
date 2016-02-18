@@ -12,43 +12,43 @@
 <body>
 <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
 <script src="https://togetherjs.com/togetherjs-min.js"></script>
-	<header><h2>this Site is under Construction please hold on before trying</h2></header>
-	
-	<div class="relativePosition verticalAlignMain">
+	<header><h2>Some features of the site may not work Please try later</h2></header>
+	<div id="chessTimerMainContainer">
+		<div class="relativePosition verticalAlignMain">
+			
+			<div class="verticalAlign">
+				<input type="text" class="padding-mid marginRight-min" id="inputTimeoutValue" placeholder="Enter Time to START timer">
+			</div>
+			<div class="verticalAlign">
+				<input type="button" class="padding-mid stopTimer" value="Start Timer" onclick="startTimer()">	
+			</div>
+		</div>
 		
-		<div class="verticalAlign">
-			<input type="text" class="border-radius-min padding-mid marginRight-min" id="inputTimeoutValue" placeholder="Enter Time to play">
+		</br>
+		</br>
+		
+		<div id="mainContainer">	    
+		<input type="button" class="btn borderTransparent" id="player1" value="Player1" onclick="player1()"/>
+
+		<div class="separator">
+			<div id="player1logo">player1</div>
+		    <div id="timer1" class="timer">
+		        00:00
+		    </div>
+		    <div id="timer2" class="timer">
+		        00:00
+		    </div>
+
 		</div>
-		<div class="verticalAlign">
-			<input type="button" class="padding-mid border-radius-min stopTimer" value="Start Timer" onclick="startTimer()">	
+
+
+		<input type="button" class="btn borderTransparent" id="player2" value="Player2" onclick="player2();"/>
+		</div>
+		<div class="relativePosition">
+			<input type="button" class="padding-mid  marginRight-min marginTop-min stopTimer absolutePosition" value="Clear Timer">
+			<button class="padding-mid marginTop-min" onclick="TogetherJS(this); return false;">Start TogetherJS</button>
 		</div>
 	</div>
-	
-	</br>
-	</br>
-	
-	<div id="mainContainer">	    
-	<input type="button" class="btn" id="player1" value="Player1" onclick="player1()"/>
-
-	<div class="separator">
-		<div id="player1logo">player1</div>
-	    <div id="timer1" class="timer">
-	        00:00
-	    </div>
-	    <div id="timer2" class="timer">
-	        00:00
-	    </div>
-
-	</div>
-
-
-	<input type="button" class="btn" id="player2" value="Player2" onclick="player2();"/>
-	</div>
-	<div class="relativePosition">
-		<input type="button" class="padding-mid border-radius-min marginRight-min marginTop-min stopTimer absolutePosition" value="Clear Timer">
-		<button class="padding-mid border-radius-min marginTop-min" onclick="TogetherJS(this); return false;">Start TogetherJS</button>
-	</div>
-
 	<script type="text/javascript" src="js/chessTimer.js"></script>
 </body>
 </html>

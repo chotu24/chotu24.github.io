@@ -45,7 +45,7 @@ function player1(){
 	    function updateTime(){
 	        	if(player1Seconds<0){
 	               stopTimer();
-	               alert('Player2 Lost');
+	               alert('Player1 Lost');
 	            }else{
 	            	player1TimerContainer.innerHTML= player1Seconds--;
 	        	}

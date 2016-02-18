@@ -1,29 +1,28 @@
 .separator{
-    background-color: blue;
+    
 }
 
 .btn{
     width:100px;
     height:300px;
-    position: absolute;
+    position: absolute; 
+}
+.borderTransparent{
+    border: transparent;
 }
 
 #player1{
-    position: absolute;
     top: 0px;
     left:0px;
-    background-color: #e8e8e8;
 }
 
 #player2{
-    position: absolute;
     top:0px;
     left:300px;
-    background-color: #e8e8e8;
 }
 #mainContainer{
     position: relative;
-    width: 300px;
+    width: 399px;
     height: 300px;
     background-color:#e8e8e8;
     border: 2px solid green;

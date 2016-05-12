@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chess Timer Demo App</title>
+	<link type="text/css" rel="stylesheet" href="../css/main.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/chessTimer.css"/>
+</head>
+<body>
+
+	<header><h2>Some features of the site may not work Please try later</h2></header>
+	<div id="chessTimerMainContainer">
+		<div class="relativePosition verticalAlignMain">
+			
+			<div class="verticalAlign">
+				<input type="text" class="padding-mid marginRight-min" id="inputTimeoutValue" placeholder="Enter Time to START timer">
+			</div>
+			<div class="verticalAlign">
+				<input type="button" class="padding-mid stopTimer" value="Start Timer" onclick="startTimer()">	
+			</div>
+		</div>
+		
+		</br>
+		</br>
+		
+		<div id="mainContainer">	    
+		<input type="button" class="btn borderTransparent" id="player1" value="Player1" onclick="player1()"/>
+
+		<div class="separator">
+			<div id="player1logo">player1</div>
+		    <div id="timer1" class="timer">
+		        00:00
+		    </div>
+		    <div id="timer2" class="timer">
+		        00:00
+		    </div>
+
+		</div>
+
+
+		<input type="button" class="btn borderTransparent" id="player2" value="Player2" onclick="player2();"/>
+		</div>
+		<div class="relativePosition">
+			<input type="button" class="padding-mid  marginRight-min marginTop-min stopTimer absolutePosition" value="Clear Timer">
+			
+			<!--  TODO[1/2] Find out why together is getting started automatically
+			<button class="padding-mid marginTop-min" onclick="TogetherJS(this); return false;">Start TogetherJS</button> -->
+		</div>
+	</div>
+
+<script src="../js/lib/require.js" data-main="../js/main"></script>
+<script src="../js/controller/chessTimer.js"></script>
+<!-- TODO[2/2] Find out why together is getting started automatically
+<script src="https://togetherjs.com/togetherjs-min.js"></script> -->
+</body>
+</html>

@@ -1,6 +1,43 @@
 .active{
-	opacity: .5;
+	opacity: 1;
 }
 .spriteImg{
 	display: none;
+}
+
+body{
+	padding: 0px;
+	margin: 0px;
+}
+header{
+	width: 90%;
+	height: 20%;
+	margin: 0px auto;
+	padding: 0 10px 0;
+	border: 1px solid #e8e8e8;
+}
+
+header h1{
+	text-align: center;	
+}
+
+header nav{
+	height: 12px;
+	padding: 2%;
+}
+
+nav a{
+	text-decoration: none;
+	margin: 3%;
+	border: 1px solid #e8e8e8;
+	padding: 1% 7%;
+	background: #fff;
+	opacity: 0.5;
+}
+
+#headerImg{
+	background-color: #abe;
+	background:url(../img/myOffice.jpg) -503px -1px;
+	width: 1174px;
+	height: 139.94px;
 }
